@@ -1,0 +1,136 @@
+
+@media (max-width: 1024px) {
+  #portfolio .portfolio-row {
+    text-align: center;
+    flex-direction: column-reverse;
+  }
+  #portfolio .portfolio-row [class^=col] {
+    width: 100%;
+  }
+}
+
+.services-section .services-row {
+  display: flex;
+  position: relative;
+  background-color: var(--black);
+  margin-bottom:200px ;
+}
+.services-section .service-col {
+  background-size: cover;
+  background-position: center;
+}
+.services-section a {
+  display: block;
+  color: var(--white);
+}
+.services-section .service-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: opacity 0.4s;
+}
+.services-section .service-container h3 {
+  color: var(--white);
+}
+.services-section .service-container ul {
+  list-style: none;
+  padding-left: 0;
+  font-weight: 400;
+  transition: opacity 0.4s;
+}
+.services-section .service-container .link-text {
+  white-space: nowrap;
+  transition: all 0.4s;
+}
+@media (min-width: 1025px) {
+  .services-section .services-row:hover .service-col:hover {
+    width: 100%;
+  }
+  .services-section .services-row:hover .service-col:hover a {
+    padding-top: 5%;
+  }
+  .services-section .services-row:hover .service-col:hover ul,
+.services-section .services-row:hover .service-col:hover .link-text {
+    opacity: 1;
+  }
+  .services-section .services-row:hover .service-col:hover .link-text {
+    width: 7rem;
+    transition: opacity 0.4s 0.2s, width 0.4s;
+  }
+  .services-section .services-row:hover .service-col:hover .link-icon-wrapper {
+    margin-left: -0.2rem;
+  }
+  .services-section .services-row:hover .service-col:not(:hover) {
+    width: 0;
+  }
+  .services-section .services-row:hover .service-col:not(:hover) .service-container {
+    opacity: 0.5;
+  }
+  .services-section .service-col {
+    transition: width 1s;
+    width: 25%;
+    height: 60vh;
+  }
+  .services-section .service-col:nth-of-type(1) a {
+    left: 0%;
+  }
+  .services-section .service-col:nth-of-type(2) a {
+    left: 25%;
+  }
+  .services-section .service-col:nth-of-type(3) a {
+    left: 50%;
+  }
+  .services-section .service-col:nth-of-type(4) a {
+    left: 75%;
+  }
+  .services-section .service-col:not(:last-of-type) a {
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  .services-section .service-container ul {
+    height: 0;
+    opacity: 0;
+    font-size: 90%;
+  }
+  .services-section .service-container .link-text {
+    opacity: 0;
+    width: 0;
+  }
+  .services-section .service-container .link-icon-wrapper {
+    margin-left: -0.7rem;
+  }
+  .services-section a {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    padding: 12% 2.5% 5%;
+    transition: padding 0.4s;
+  }
+}
+@media (max-width: 1024px) {
+  .services-section h2 {
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .services-section .container-full {
+    width: 100%;
+  }
+  .services-section .services-row {
+    flex-direction: column;
+  }
+  .services-section .service-col {
+    width: 100%;
+  }
+  .services-section .service-col:not(:last-of-type) a {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  }
+  .services-section .service-container {
+    padding: 8%;
+  }
+  .services-section .service-container .service-content {
+    margin-bottom: 4rem;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

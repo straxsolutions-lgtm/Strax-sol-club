@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+    <base href="/" />
+    <meta charset="utf-8">
+   
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <link rel="stylesheet" href="%PUBLIC_URL% assets/css2/services/service.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%style5152.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%assets/css/animate.min.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%assets/css/boxicons.min.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%assets/css/odometer.min.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%assets/css/meanmenu.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%assets/css/magnific-popup.min.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%assets/css/style.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%assets/css/responsive.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%assets/css/dark-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <link rel="icon" type="image/png" href="%PUBLIC_URL%assets/img/favicon.png">
+    
+ 
+</head>
+
+<body>
+ 
+
+    <div class="dark-version"><label id="switch" class="switch"><input type="checkbox" onchange="toggleTheme()"
+                id="slider"> <span class="slider round"></span></label></div>
+    <div class="preloader-area">
+        <div class="spinner">
+            <div class="inner">
+                <div class="disc"></div>
+                <div class="disc"></div>
+                <div class="disc"></div>
+            </div>
+        </div>
+    </div>
+ 
+    <div id="root"></div>
+
+    <script>
+        var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?23629';
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = url;
+        var options = {
+      "enabled":true,
+      "chatButtonSetting":{
+          "backgroundColor":" #13c4a1",
+          "ctaText":"",
+          "borderRadius":"50",
+          "marginLeft":"0",
+          "marginBottom":"70",
+          "marginRight":"20",
+          "position":"right"
+      },
+      "brandSetting":{
+          "brandName":"Strax",
+          "brandSubTitle":"Typically replies within a day",
+          "brandImg":"https://templates.envytheme.com/strax/default/assets/img/favicon.png",
+          "welcomeText":"Hi there!\nHow can I help you?",
+          "messageText":"Hello, I have a question about {{page_link}}",
+          "backgroundColor":"#080a3c",
+          "ctaText":"Start Chat",
+          "borderRadius":"10",
+          "autoShow":true,
+          "phoneNumber":"+92 320 851 2825"
+      }
+    };
+        s.onload = function() {
+            CreateWhatsappChatWidget(options);
+        };
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+    </script>
+    
+   
+    <script src="%PUBLIC_URL%assets/js/jquery.min.js"></script>
+    <script src="%PUBLIC_URL%assets/js/bootstrap.bundle.min.js"></script>
+    <script src="%PUBLIC_URL%assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="%PUBLIC_URL%assets/js/jquery.appear.min.js"></script>
+    <script src="%PUBLIC_URL%assets/js/odometer.min.js"></script>
+    <script src="%PUBLIC_URL%assets/js/owl.carousel.min.js"></script>
+    <script src="%PUBLIC_URL%assets/js/jquery.meanmenu.js"></script>
+    <script src="%PUBLIC_URL%assets/js/wow.min.js"></script>
+    <script src="%PUBLIC_URL%assets/js/conversation.js"></script>
+    <script src="%PUBLIC_URL%assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="%PUBLIC_URL%assets/js/form-validator.min.js"></script>
+    <script src="%PUBLIC_URL%assets/js/contact-form-script.js"></script>
+    <script src="%PUBLIC_URL%assets/js/particles.min.js"></script>
+    <script src="%PUBLIC_URL%assets/js/custom-particles.js">
+    </script>
+    <script src="%PUBLIC_URL%/assets/js/main.js"></script>
+    
+</body>
+
+</html>
